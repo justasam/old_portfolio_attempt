@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  display: block;
+  height: 60px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.1);
+}
+header .wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 1024px;
+}
+
+#logo img {
+  height: 50px;
+}
+#logo {
+  float: left;
+  padding-top: 5px;
+}
+
+nav {
+  float: right;
+  line-height: 60px;
+}
+nav a {
+  text-decoration: none;
+  color: #087AB9;
+  padding: 0 10px;
+}
+nav a:hover {
+  color: #007A94;
+}
+
+footer {
+  background: white;
+  position: absolute;
+  padding-top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 1px 1px 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 1px 1px 3px rgba(0,0,0,0.1);
+}
+#freelancer-link {
+  width: 165px;
+  display: block;
+  margin: 2px auto;
+}
+
+/* App styling */
+#app {
+  position: relative;
+  top: 5px;
+  bottom: 5px;
+  overflow: auto;
+  max-height: calc(100vh - 110px);
+}
+
+
+/* Portfolio page grid */
+#work-grid {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.work-grid--item {
+  position: relative;
+  float: left;
+  clear: none;
+  display: inline-block;
+  width: 256px;
+  height: 256px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.work-grid--item img {
+  width: 254px;
+  height: 254px;
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+}
+.work-grid--item span {
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0,.1);
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+
+/* Under Construction */
+.bigtext {
+  text-align: center;
+  color: #444;
+  line-height: 50vh;
+}
+
+
+/* Responsive styling */
+@media screen and (min-width: 1024px) {
+  header .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #work-grid {
+    max-width: 768px;
+  }
+  #logo img {
+    height: 40px;
+  }
+  #logo {
+    float: left;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 844px) {
+  #work-grid {
+    max-width: 512px;
+  }
+}
+@media screen and (max-width: 588px) {
+  #work-grid {
+    width: 100%;
+  }
+  .work-grid--item {
+    display: block;
+    width: 100%;
+  }
+  .bigtext {
+    font-size: 7vw;
+  }
+}
