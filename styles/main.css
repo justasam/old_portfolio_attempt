@@ -60,7 +60,7 @@ footer {
   top: 5px;
   bottom: 5px;
   overflow: auto;
-  max-height: calc(100vh - 110px);
+  max-height: calc(100vh - 121px);
 }
 
 
